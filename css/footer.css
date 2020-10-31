@@ -1,0 +1,20 @@
+.main-footer{
+    grid-area: footer;
+
+    background: linear-gradient(#3e1b5f,#5b3183);
+    color: white;
+
+    padding: 0rem 5rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-footer a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', sans-serif;
+
+    padding: 0rem 1rem;
+}

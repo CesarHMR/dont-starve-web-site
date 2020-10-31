@@ -1,0 +1,18 @@
+.title{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.image{
+    background: linear-gradient(#eeabf0,#8f63b8);
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+    margin-right: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
