@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/food-page.css">
-    <link rel="stylesheet" href="./css/icon.css">
     <link rel="shortcut icon" href="./favicon.ico">
 
   </head>
@@ -22,14 +21,11 @@
       <?php
         include "./php/csv-reader.php";
         $chosenFood = getFoodById($_GET["chosen_food"], $foods);
-        echo "$chosenFood->name <br>";
-        echo "$chosenFood->hunger <br>";
-        echo "$chosenFood->health <br>";
-        echo "$chosenFood->sanity <br>";
-        echo "$chosenFood->exclusive <br>";
-
       ?>
-
+      <div class="title">
+        <div class="image <?php echo "$chosenFood->exclusive"?>"><img src="./files/images/food-icons/<?php echo "$chosenFood->name"?>.png" width="60px"></div>
+      <h1><?php echo "$chosenFood->name"?></h1>
+      </div>
       <section>
           <h2>Modo de Preparo</h2>
           <p>Em breve será adicionado essa informação...</p>

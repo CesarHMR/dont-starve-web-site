@@ -6,7 +6,6 @@
     margin-bottom: 5rem;
 }
 .image{
-    background: linear-gradient(#eeabf0,#8f63b8);
     border-radius: 100%;
     width: 7rem;
     height: 7rem;
@@ -15,4 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.true{
+    background: linear-gradient(#eeabf0,#8f63b8);
+}
+
+.false{
+    background: linear-gradient(rgb(233, 210, 161),rgb(184, 158, 99));
 }

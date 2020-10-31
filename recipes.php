@@ -11,10 +11,10 @@
     <link rel="shortcut icon" href="./favicon.ico">
   </head>
   <body>
+    <div class="main">
     <!------Header------>
     <?php include "./html/header.html"?>
     <!------Content------>
-    <div class="main">
       <div class="content">
       <a href="./recipes.php?order=hungerAsc">Fome Asc</a>
       <a href="./recipes.php?order=hungerDes">Fome Des</a>
@@ -34,8 +34,8 @@
       ?>
         </div>
       </div>
-    </div>
     <!------Footer------>
     <?php include "./html/footer.html" ?>
+    </div>
   </body>
 </html>
