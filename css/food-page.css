@@ -5,7 +5,7 @@
     align-items: center;
     margin-bottom: 5rem;
 }
-.image{
+.food-image{
     border-radius: 100%;
     width: 7rem;
     height: 7rem;
@@ -15,11 +15,45 @@
     align-items: center;
     justify-content: center;
 }
-
-.true{
+.true{/*Exclusive Warly*/
+    background: linear-gradient(#ff84f5,#ac4480);
+}
+.false{/*Not Exclusive Warly*/
+    background: linear-gradient(rgb(233, 210, 161),rgb(184, 158, 99));
     background: linear-gradient(#eeabf0,#8f63b8);
 }
 
-.false{
-    background: linear-gradient(rgb(233, 210, 161),rgb(184, 158, 99));
+.status{
+    background-color: #d6b3f3;
+    border-radius: 10rem;
+    padding: 0 5rem;
+
+    height: 4.5em;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.element{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element img{
+    position: absolute;
+    width: 80px;
+}
+.element p{
+    position: absolute;
+    z-index: 100;
+
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: #49216E;
 }

@@ -1,0 +1,28 @@
+.order-container{
+    background-color: #431E66;
+    border-radius: 10rem;
+    margin-bottom: 2em;
+
+    padding: .2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order{
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 500;
+
+    border-radius: 10rem;
+    padding: .8em;
+
+    transition: background 200ms;
+}
+
+.order:hover{
+    background-color: #8BC700;
+}

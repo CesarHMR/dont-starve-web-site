@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/recipes.css">
     <link rel="shortcut icon" href="./favicon.ico">
   </head>
   <body>
@@ -16,14 +17,15 @@
     <?php include "./html/header.html"?>
     <!------Content------>
       <div class="content">
-      <a href="./recipes.php?order=hungerAsc">Fome Asc</a>
-      <a href="./recipes.php?order=hungerDes">Fome Des</a>
-      <a href="./recipes.php?order=healthAsc">Vida Asc</a>
-      <a href="./recipes.php?order=healthDes">Vida Des</a>
-      <a href="./recipes.php?order=sanityAsc">Sanidade Asc</a>
-      <a href="./recipes.php?order=sanityDes">Sanidade Des</a>
-      <a href="./recipes.php?order=nameAsc">Nome Asc</a>
-      <a href="./recipes.php?order=nameDes">Nome Des</a>
+        <div class="order-container">
+      <a href="./recipes.php?order=hungerAsc" class="order">+Fome</a>
+      <a href="./recipes.php?order=hungerDes" class="order">-Fome</a>
+      <a href="./recipes.php?order=healthAsc" class="order">+Vida</a>
+      <a href="./recipes.php?order=healthDes" class="order">-Vida</a>
+      <a href="./recipes.php?order=sanityAsc" class="order">+Sanidade</a>
+      <a href="./recipes.php?order=sanityDes" class="order">-Sanidade</a>
+      <a href="./recipes.php?order=nameAsc" class="order">Alfabética</a>
+        </div>
         <div class="grid-content">
       <?php
       include "./php/csv-reader.php";

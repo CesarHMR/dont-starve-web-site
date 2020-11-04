@@ -22,10 +22,27 @@
         include "./php/csv-reader.php";
         $chosenFood = getFoodById($_GET["chosen_food"], $foods);
       ?>
+      <!--Title-->
       <div class="title">
-        <div class="image <?php echo "$chosenFood->exclusive"?>"><img src="./files/images/food-icons/<?php echo "$chosenFood->name"?>.png" width="60px"></div>
+        <div class="food-image <?php echo "$chosenFood->exclusive"?>"><img src="./files/images/food-icons/<?php echo "$chosenFood->name"?>.png" width="60px"></div>
       <h1><?php echo "$chosenFood->name"?></h1>
       </div>
+      <!--Status-->
+      <div class="status">
+      <div class="element">
+          <img src="./files/images/status-icons/Hunger.svg" alt="Fome">
+          <p><?php echo $chosenFood->hunger ?></p>
+        </div>
+        <div class="element">
+          <img src="./files/images/status-icons/Health.svg" alt="Vida">
+          <p><?php echo $chosenFood->health ?></p>
+        </div>
+        <div class="element">
+          <img src="./files/images/status-icons/Sanity.svg" alt="Sanidade">
+          <p><?php echo $chosenFood->sanity ?></p>
+        </div>
+      </div>
+      <!--Recipe-->
       <section>
           <h2>Modo de Preparo</h2>
           <p>Em breve será adicionado essa informação...</p>

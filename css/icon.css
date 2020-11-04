@@ -1,44 +1,92 @@
 .grid-content{
     width: 100%;
 
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    justify-items: center;
-    align-items: center;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-}
-
-.food-icon img{
-    background: linear-gradient(rgb(241, 228, 199),rgb(197, 173, 119));
-    width: 100%;
-    height: 100%;
-
-    padding: .1rem;
-
-    border: solid .5rem rgb(133, 115, 55);
-    border-radius: none;
-    outline: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .food-icon{
-    width: 6.4rem;
-    height: 6.4rem;
-
-    cursor: pointer;
-    outline: none;
-    border: none;
-
-    transition: width  100ms ease, height 100ms ease;
+    width: 4em;
+    height: 4em;
+    margin: .2em;
+    position: relative;
 }
 
-.food-icon:hover{
-    width: 5.6rem;
-    height: 5.6rem;
+.image{
+    width: 60px;
 }
 
-.true img{
-    background: linear-gradient(rgb(229, 199, 241),rgb(195, 119, 197));
-    border: solid .5rem rgb(110, 86, 156);
+.food-icon a{
+    border-radius: 100%;
+    background: linear-gradient(rgb(233, 210, 161),rgb(184, 158, 99));
+    background: linear-gradient(#eeabf0,#8f63b8);
+    min-width: 4em;
+    height: 4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.true a{
+    background: linear-gradient(#ff84f5,#ac4480);
+}
+.mask{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 27rem;
+    border-radius: 10rem;
+
+    overflow: hidden;
+}
+.mini{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: -300px;
+
+    width: 100%;
+    height: 27rem;
+    padding: 4rem 0;
+
+    background: linear-gradient(#9b3b9e,#641ca7);
+    border-radius: 10rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+
+    transition: all 400ms;
+}
+.mini img{
+    width: 65px;
+}
+
+.food-icon a:hover .mini{
+    top: 0px;
+}
+
+.element{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.element img, .element p{
+    position: absolute;
+}
+
+.element p{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+    font-weight: 800;
+    font-size: 3rem;
 }
